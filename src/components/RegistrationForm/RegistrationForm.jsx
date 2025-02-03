@@ -2,7 +2,7 @@ import { Formik, Form, Field, ErrorMessage } from "formik";
 import { useDispatch } from "react-redux";
 import { register } from "../../redux/auth/operations";
 import * as Yup from "yup";
-import  "./RegisterForm.css";
+import  "./RegistrationForm.css";
 
 const RegisterSchema = Yup.object().shape({
   name: Yup.string().min(2, "Мінімум 2 символи").required("Обов’язкове поле"),
@@ -10,7 +10,7 @@ const RegisterSchema = Yup.object().shape({
   password: Yup.string().min(6, "Мінімум 6 символів").required("Обов’язкове поле"),
 });
 
-export const RegisterForm = () => {
+export const RegistrationForm = () => {
   const dispatch = useDispatch();
 
   const handleSubmit = (values, { resetForm }) => {
