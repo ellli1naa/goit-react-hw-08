@@ -1,0 +1,14 @@
+.contact-delete {
+  padding: 5px 10px;
+  background-color: #d9534f;
+  color: #fff;
+  font-size: 14px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.contact-delete:hover {
+  background-color: #c9302c;
+}
